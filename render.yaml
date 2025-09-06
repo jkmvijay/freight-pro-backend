@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: freight-pro-backend
+    env: node
+    plan: free
+    buildCommand: "npm install && npm run migrate"
+    startCommand: "npm start"
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: COMMISSION_PERCENT
+        value: 0.1

@@ -1,0 +1,1 @@
+console.log("Migration script placeholder - create tables in Postgres here");
